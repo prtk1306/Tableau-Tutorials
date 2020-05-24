@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.19.1010.1202                               -->
+<workbook source-build='2019.4.0 (20194.19.1010.1202)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Country Data (Global_Library_Data_eU8QYse)' inline='true' name='federated.11snc1s0vymj4y10y8nnp12ihogw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Global_Library_Data_eU8QYse' name='excel-direct.0slm7pu097o10a11xuag71fxs3fx'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/tableau/data/Global_Library_Data_eU8QYse.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0slm7pu097o10a11xuag71fxs3fx' name='Country Data' table='[&apos;Country Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:G220:no:A1:G220:0' header='yes' outcome='2'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='integer' name='Expenditures  (US Dollars)' ordinal='2' />
+            <column datatype='integer' name='Total Libraries' ordinal='3' />
+            <column datatype='integer' name='Total Librarians' ordinal='4' />
+            <column datatype='integer' name='Total Volumes' ordinal='5' />
+            <column datatype='integer' name='Total Users' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Expenditures  (US Dollars)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Expenditures  (US Dollars)]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Expenditures  (US Dollars)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Libraries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Libraries]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Libraries</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Librarians</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Librarians]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Librarians</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Volumes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Volumes]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Volumes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Users]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Users</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G220:no:A1:G220:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.388889' measure-ordering='alphabetic' measure-percentage='0.611111' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='PS' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Imported Excel file using Data connection&quot;'>
+        <calculation class='tableau' formula='&quot;Imported Excel file using Data connection&quot;' />
+      </column>
+    </datasource>
+    <datasource caption='Country Data (Global Library Data)' inline='true' name='federated.0x6uswh1yqbbjk18vqllr0jnswhf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Global Library Data' name='excel-direct.0etnhyg1wrvz0c1az6owi1ctfi72'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/tableau/data/Global_Library_Data_eU8QYse.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0etnhyg1wrvz0c1az6owi1ctfi72' name='Country Data' table='[&apos;Country Data$&apos;]' type='table'>
+          <columns gridOrigin='A1:G220:no:A1:G220:0' header='yes' outcome='2'>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='integer' name='Expenditures  (US Dollars)' ordinal='2' />
+            <column datatype='integer' name='Total Libraries' ordinal='3' />
+            <column datatype='integer' name='Total Librarians' ordinal='4' />
+            <column datatype='integer' name='Total Volumes' ordinal='5' />
+            <column datatype='integer' name='Total Users' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Expenditures  (US Dollars)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Expenditures  (US Dollars)]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Expenditures  (US Dollars)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Libraries</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Libraries]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Libraries</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Librarians</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Librarians]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Librarians</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Volumes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Volumes]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Volumes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Users]</local-name>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias>Total Users</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Country Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G220:no:A1:G220:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='PS TC' datatype='string' name='[Calculation_541839384325083139]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.373333' measure-ordering='alphabetic' measure-percentage='0.54963' parameter-percentage='0.077037' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='PS' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Imported Excel file using Data connection&quot;'>
+          <calculation class='tableau' formula='&quot;Imported Excel file using Data connection&quot;' />
+        </column>
+      </datasource-dependencies>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='PS'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Country Data (Global Library Data)' name='federated.0x6uswh1yqbbjk18vqllr0jnswhf' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='PS' datatype='string' name='[Parameter 1]' param-domain-type='any' role='measure' type='nominal' value='&quot;Imported Excel file using Data connection&quot;'>
+              <calculation class='tableau' formula='&quot;Imported Excel file using Data connection&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0x6uswh1yqbbjk18vqllr0jnswhf'>
+            <column caption='PS TC' datatype='string' name='[Calculation_541839384325083139]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+            </column>
+            <column-instance column='[Calculation_541839384325083139]' derivation='None' name='[none:Calculation_541839384325083139:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='67' />
+            <format attr='width' value='402' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0x6uswh1yqbbjk18vqllr0jnswhf].[none:Calculation_541839384325083139:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{610A93BB-9E83-4BD7-9485-939B0B87B833}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='58'>
+    <window class='worksheet' maximized='true' name='PS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0x6uswh1yqbbjk18vqllr0jnswhf].[none:Calculation_541839384325083139:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E75C8DEE-4656-4515-A36F-2F9C341100C6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='71' name='PS' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
