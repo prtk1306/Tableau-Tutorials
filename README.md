@@ -1,4 +1,4 @@
 # Tableau-Tutorials
 
-#### Prateek Goyal
-#### Tableau certified Professional!
+#### - Prateek Goyal
+####   (Tableau certified Professional)
